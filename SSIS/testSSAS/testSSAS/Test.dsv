@@ -1,0 +1,112 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2b83ede0-8ccc-4200-85c8-67c4f25cb2db" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Test</ID>
+  <Name>Test</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Test</DataSourceID>
+  <Schema>
+    <xs:schema id="Test" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Test" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="94e26933-2c06-424b-8242-46a2b48e3605">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_OLE_x0020_DB_x0020_Destination" msprop:design-time-name="f111144d-97e8-4430-bb77-542de4e126c8" msprop:DbTableName="OLE DB Destination" msprop:FriendlyName="OLE DB Destination" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="orderid" msprop:design-time-name="a28600e1-93d4-44d4-ba49-9e2f21cc7928" msprop:DbColumnName="orderid" msprop:FriendlyName="orderid" type="xs:int" minOccurs="0" />
+                  <xs:element name="custid" msprop:design-time-name="70f335c6-13b2-4ea7-8ea5-2367c9ef1be5" msprop:DbColumnName="custid" msprop:FriendlyName="custid" type="xs:int" minOccurs="0" />
+                  <xs:element name="empid" msprop:design-time-name="7bb0816a-273a-4b6d-8cb9-b81ffda6d164" msprop:DbColumnName="empid" msprop:FriendlyName="empid" type="xs:int" minOccurs="0" />
+                  <xs:element name="shippeddate" msprop:design-time-name="34c3e226-c0cd-4506-b49e-eed1b7f3df6b" msprop:DbColumnName="shippeddate" msprop:FriendlyName="shippeddate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="shipperid" msprop:design-time-name="94742c7c-ef5e-4edc-b897-02585f555e23" msprop:DbColumnName="shipperid" msprop:FriendlyName="shipperid" type="xs:int" minOccurs="0" />
+                  <xs:element name="freight" msprop:design-time-name="54446701-acf2-43d5-b84f-5eae9a33740f" msprop:DbColumnName="freight" msprop:FriendlyName="freight" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="shipname" msprop:design-time-name="08d91e7e-1d31-4045-b214-6187168907cb" msprop:DbColumnName="shipname" msprop:FriendlyName="shipname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="40" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="shipaddress" msprop:design-time-name="31dded07-7c0b-488f-9f73-77a0a6326318" msprop:DbColumnName="shipaddress" msprop:FriendlyName="shipaddress" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="60" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="shipcity" msprop:design-time-name="9797b78a-ef04-462e-a0c6-484b7d55c2a8" msprop:DbColumnName="shipcity" msprop:FriendlyName="shipcity" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="shipregion" msprop:design-time-name="42760812-ade6-4f69-9765-5c73ee6b8471" msprop:DbColumnName="shipregion" msprop:FriendlyName="shipregion" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="shippostalcode" msprop:design-time-name="21671b62-04bc-4218-9256-9c8e9875bf7e" msprop:DbColumnName="shippostalcode" msprop:FriendlyName="shippostalcode" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="shipcountry" msprop:design-time-name="2f7a2fca-79a6-40c1-a63f-d48b10f6f0e9" msprop:DbColumnName="shipcountry" msprop:FriendlyName="shipcountry" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <Test xmlns="" />
+  </Schema>
+</DataSourceView>

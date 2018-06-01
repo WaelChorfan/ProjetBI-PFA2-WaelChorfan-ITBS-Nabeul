@@ -1,0 +1,105 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="68f2bdc4-9d31-4136-ace5-01a790aaa551" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DWH</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Dim Clients</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9d3a6d56-dd5a-4e77-a326-12064f6f8320">
+          <ID>Dim Clients</ID>
+          <Name>Dim Clients</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c3d16174-4451-4040-9cf7-79e565f43b95">
+            <DataSourceViewID>DWH</DataSourceViewID>
+            <TableID>dbo_dimClients</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Employes</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="efdc0c8d-460f-4041-8f0f-3a9a0afaf54a">
+          <ID>Dim Employes</ID>
+          <Name>Dim Employes</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="663541c9-0d9a-4484-bfc6-7dd3b2869f86">
+            <DataSourceViewID>DWH</DataSourceViewID>
+            <TableID>dbo_dimEmployes</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Produits</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="21b54d84-d258-4374-8afe-ddf1b4d01f96">
+          <ID>Dim Produits</ID>
+          <Name>Dim Produits</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="749e9648-d3d9-4998-affe-e1e7946a0273">
+            <DataSourceViewID>DWH</DataSourceViewID>
+            <TableID>dbo_dimProduits</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Temps</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c95a2b88-265a-4926-a8ad-cd91f62ef51b">
+          <ID>Dim Temps</ID>
+          <Name>Dim Temps</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="11c1e69a-a6db-4f66-9617-4b1229eda506">
+            <DataSourceViewID>DWH</DataSourceViewID>
+            <TableID>dbo_dimTemps</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FACT CMD</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3408b786-136d-426d-bd7f-bc1f3a91c03a">
+          <ID>FACT CMD</ID>
+          <Name>FACT CMD</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7d1129d7-0702-43d7-adc1-6034e15319ca">
+            <DataSourceViewID>DWH</DataSourceViewID>
+            <TableID>dbo_FACT_CMD</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
